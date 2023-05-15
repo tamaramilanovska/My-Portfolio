@@ -1,0 +1,361 @@
+/* Google Fonts - Raleway (100, 400, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Navigation */
+nav{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.headings{
+    text-align: center;
+    margin-top: -15%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 7%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #6c6c6c;
+    margin-right: 50px;
+    font-size: 20px;
+}
+nav ul li a {
+    display: inline-block;
+    padding-bottom:5px;
+    background-image: linear-gradient( #6c6c6c,  #6c6c6c);
+    background-position: right -100% bottom 0;
+    background-size: 200% 1px;
+    background-repeat: no-repeat;
+}
+  
+nav ul li a:hover {
+    background-position: left -100% bottom 0;
+    transition: background-position 0.7s;
+}
+.introduction{
+    position: relative;
+    bottom:320px;
+    margin-top: 100px;
+}
+
+/* Headings */
+h1{
+    padding: 20px 35px;
+    background-color: white;
+    position: absolute;
+    left: 15%;
+    top: -1%;
+    font-size: 50px;
+    color: #3c3c3c;
+}
+
+h2{
+    color: #525252;
+}
+
+.me, h1{
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.description-text{
+    width: 800px;
+    padding-left: 100px;
+    margin-top: 180px;
+}
+
+p, ul li{
+    line-height: 1.5;
+    color: #666565;
+    text-align: justify;
+}
+.socials img{
+    margin-right: 10px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1600px) {
+        .container{
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+}
+@media screen and (max-width: 1300px) {
+    .green-plant{
+        width: 300px;
+    }
+    .introduction{
+        margin-top: 100px;
+    }
+    .me{
+        width: 350px;
+    }
+    .description-text{
+        padding-left: 100px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 1115px) {
+    .me{
+        width: 380px;
+    }
+    .description-text{
+        padding-left: 50px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 953px) {
+    header{
+        margin-bottom: 200px;
+    }
+    .me{
+        width: 350px;
+        margin-left: 80px;
+    }
+    .green-plant{
+        width: 250px;
+    }
+    .introduction{
+        margin-top: 150px;
+    }
+    .description-text{
+        padding-left: 50px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 843px) {
+    .me{
+        width: 300px;
+        margin-left: 50px;
+    }
+    .green-plant{
+        width: 200px;
+    }
+    .introduction{
+        margin-top: 150px;
+    }
+    .description-text{
+        padding-left: 30px;
+        width: 400px;
+        padding-right: 20px;
+    }
+    p, ul li{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 710px) {
+    .me{
+        width: 300px;
+        margin-left: 80px;
+    }
+    .green-plant{
+        width: 200px;
+    }
+    .introduction{
+        margin-top: 150px;
+    }
+    .description-text{
+        padding-left: 50px;
+        width: 400px;
+        padding-right: 20px;
+    }
+    p, ul li{
+        font-size: 14px;
+        line-height: 1.5em;
+        text-align: left;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .me{
+        width: 250px;
+        margin-left: 30px;
+    }
+    .green-plant{
+        width: 200px;
+    }
+    .introduction{
+        margin-top: 150px;
+    }
+    .description-text{
+        padding-left: 50px;
+        width: 400px;
+        padding-right: 20px;
+    }
+    p, ul li{
+        font-size: 14px;
+        line-height: 1.5em;
+        text-align: left;
+    }
+    h2{
+        font-size: 20px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    h1{
+        margin-left: 0;
+        font-size: 40px;
+        top: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .green-plant{
+        width: 150px;
+    }
+    body{
+        overflow: auto;
+    }
+    .introduction{
+        margin-left: 60px;
+        margin-top: 200px;
+    }
+    .me{
+        margin-left: 0;
+        margin-top: 120px;
+    }
+    .description-text{
+        margin-top: 0;
+        width: 600px;
+        padding-left: 0;
+    }
+    .h1{
+        top: -1%;
+    }
+}
+@media screen and (max-width: 511px) {
+    .green-plant{
+        width: 150px;
+        display: none;
+    }
+    .introduction{
+        margin-left: 60px;
+        position: relative;
+        bottom: 200px;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 0px!important;
+    }
+}
+@media screen and (max-width: 410px) {
+    .green-plant{
+        width: 150px;
+        display: none;
+    }
+    .introduction{
+        margin-left: 40px;
+        position: relative;
+        bottom: 200px;
+        width: 300px;
+    }
+    .description-text{
+        padding-right: 0;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 0px!important;
+    }
+    nav ul{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 357px) {
+    .green-plant{
+        width: 150px;
+        display: none;
+    }
+    .introduction{
+        margin-left: 60px;
+        position: relative;
+        bottom: 200px;
+    }
+    .me{
+        width: 200px;
+    }
+
+    h1{
+        font-size: 25px;
+        left: 0%;
+        padding: 20px 40px;
+        margin-top: 0px!important;
+    }
+    nav ul{
+        margin-left: 0;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .green-plant{
+        width: 150px;
+        display: none;
+    }
+    .introduction{
+        margin-left: 30px;
+        position: relative;
+        bottom: 200px;
+    }
+    .me{
+        width: 200px;
+    }
+
+    h1{
+        font-size: 25px;
+        left: 0%;
+        padding: 20px 40px;
+        margin-top: 0px!important;
+    }
+    nav ul li a{
+        margin-right: 15px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+

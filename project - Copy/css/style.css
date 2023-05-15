@@ -1,0 +1,564 @@
+/* Google Fonts Montserrat 400 and 600 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* alternative-boxmodel */
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color:#dae5e6;
+}
+#bold{
+    color: #212121;
+}
+::selection{
+    color:#454545 ;
+    background-color: #c7ddff;
+}
+
+.container{
+    padding: 20px 20px 0 20px;
+}
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Header img and h1 */
+header{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+h1{
+    margin-left: 20px;
+    color: #454545;
+}
+.img1{
+    width: 40px;
+    height: 40px;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    margin: 10px;
+}
+nav a {
+    margin: 30px;
+    text-decoration: none;
+    color: #454545;
+    padding-bottom:2px;
+    background: linear-gradient(#333,#333) center bottom;
+    background-size: 0% 2px;
+    background-repeat:no-repeat;
+    transition: all 0.45s;
+}
+nav a:hover{
+    background-size: 100% 2px;
+}
+form{
+    margin-top: 30px;
+}
+
+/* Main */
+main{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 60px;
+    
+}
+.container1{
+    flex: 1 1 40%;
+    margin-right: 50px;
+}
+h3{
+    text-transform: uppercase;
+    color: #454545;
+    font-weight: 600;
+}
+.container1 p{
+    max-width:60ch;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin: 50px 0;
+    color: #4d4d4d;
+    font-size:1.000em;
+}
+
+/* Cta button */
+.cta{
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    background-color: #f4bfff;
+    filter: drop-shadow(10px 10px 10px gray);
+    color: #454545;
+    font-weight: 600;
+    cursor: pointer;
+
+    margin-left: 150px;
+}
+.cta:hover{
+    filter: drop-shadow(10px 10px 10px violet);
+}
+.cta:active{
+    border: none;
+    filter: drop-shadow(10px 10px 10px #69dffa);
+}
+.container2{
+    flex: 1 1 60% ;
+}
+
+/* Section - why is typography important -  Container 3 */
+
+.main-article{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main2{
+    max-width: 60ch;
+    margin-left: 100px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    order: 2;
+    color: #4d4d4d;
+    font-size:1.000em;
+    
+}
+.img2{
+    order: 1;
+}
+.container3{
+    margin-top: 80px;
+}
+hr{
+    border: 1px solid gray;
+    background-color: gray;
+    width: 200px;
+    margin-left: 0;
+    margin-top: 25px;
+}
+
+/* Section - Typography builds brand recognition, Typography holds the attention of the readers, Typography influences decision making */
+.articles{
+    font-size:1.000em;
+    display: flex;
+    justify-content: space-evenly;
+    color: #454545;
+    margin-top: 80px;
+    background-color: #d7dbe0;
+    padding: 5px;
+
+}
+.articles p{
+    max-width: 40ch;
+    line-height: 30px;
+    color: #4d4d4d;
+    font-size:1.000em;
+}
+.article1{
+    order: 2;
+}
+.article2{
+    order: 1;
+}
+.article3{
+    order: 3;
+}
+
+/* Section - Learn More */
+.learnmore{
+    margin-top: 50px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.learnmore ul li a{
+    text-decoration: none;
+    color: #4d4d4d;
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-size:1.000em;
+}
+.learnmore ul li a:hover{
+    color: white;
+    background-color: #a3a3a3;
+}
+/* Fonts and Typefaces */
+.fonts{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    color: #4d4d4d;
+}
+
+.font{
+    max-width: 60ch;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin: 20px;
+    font-size:1.000em;
+    color: #4d4d4d;
+}
+
+/* Section - Color */
+.color{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.colorp{
+    max-width: 60ch;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #4d4d4d;
+    font-size:1.000em;
+}
+
+/* Section - Contrast, Consistency, and White Space */
+.ccw{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d7dbe0;
+    margin: 50px 0 50px 0 ;
+}
+
+.ccw h3{
+    text-align: center;
+}
+.ccw p{
+    margin: 10px;
+    font-size:1.000em;
+    max-width: 60ch;
+    line-height: 30px;
+    color: #4d4d4d;
+    font-size:1.000em;
+}
+.contrast{
+    order: 2;
+}
+.consistency{
+    order: 1;
+}
+.white-space{
+    order:3;
+}
+
+/* Section - Alignment and Hierarchy */
+.alignment-hierarchy{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.alignment-hierarchy p {
+    margin: 10px;
+    max-width: 60ch;
+    line-height: 30px;
+    color: #4d4d4d;
+    font-size:1.000em;
+}
+.alignment-hierarchy h3{
+    text-align: center;
+}
+/* Images Alignment and Hierarchy */
+.images{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.hierarchy-img, .alignment-img{
+    width: 400px;
+    height: 350px;
+}
+/* Footer - Related Articles */
+.related-articles{
+    margin-top: 50px;
+    text-align: center;
+    font-size:1.000em;
+}
+.articles-footer h3{
+    text-align: center;
+}
+.articles-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Scroll - Animation */
+.scroll{
+    height: 70px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px; 
+    animation: up-down 1s infinite alternate;  
+}
+
+/* Left and Right arrows */
+.left-arrow{
+    animation: leftarrow 1s infinite alternate;
+}
+.right-arrow{
+    animation: rightarrow 1s infinite alternate;
+}
+
+/* Related Articles */
+.related-articles h2{
+    text-transform: uppercase;
+    color: #454545;
+    font-weight: 600
+}
+.articles-footer img{
+    transition: transform 0.3s ease;
+}
+.design-software a img{
+    transition: transform 0.3s ease;
+}
+.animations a img{
+    transition: transform 0.3s ease;
+}
+.animations a img:hover{
+    transform: translateY(-4px);
+}
+.design-software a img:hover{
+    transform: translateY(-4px);
+}
+
+.color-theory img:hover{
+    transform: translateY(-4px);
+}
+
+/* section - Footer end */
+.footerend{
+    margin-top: 50px;
+    color: #878787;
+}
+
+.imgandlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerend h3{
+    margin-left: 10px;
+
+}
+.footerend p{
+    text-align: center;
+    font-size:1.000em;
+}
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fbicon, .igicon, .twtticon{
+    margin: 10px;
+}
+.twtticon{
+    margin-left: 1px;
+}
+
+/* Animations */
+@keyframes rightarrow  {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-8px);
+    }
+  }
+
+@keyframes leftarrow  {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(8px);
+    }
+  }
+
+@keyframes up-down  {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1450px){
+    main{
+        margin-left: 100px;
+    }
+    .color-theory, .design-software{
+        display: none;
+    }
+    .articles-footer{
+        justify-content: space-around;
+        padding-top: 50px;
+    }
+    .color{
+        flex-wrap: wrap;
+       
+    }
+    .colorp{
+        max-width: 100%;
+        padding: 0 0 10px 0;
+        margin-left: 2%;
+    }
+    .articles{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1040px){
+    main{
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .cta{
+        justify-content: center;
+        margin-left: 34%;
+        
+    }
+    .container1{
+        margin-left: 20%;
+    }
+    .container1 h3{
+        padding-left: 25%;
+    }
+    .container2{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .main-article{
+        flex-wrap: wrap;
+    }
+    .main2{
+        margin-top: 50px;
+        margin-left: 0;
+        max-width: 100ch;
+    }
+    .main2 h3{
+        text-align: center;
+    }
+    .fonts{
+        flex-wrap: wrap;
+    }
+    .font{
+        max-width: 100%;
+    }
+    .ccw{
+        flex-wrap: wrap;
+        padding: 10px 0;
+        margin-left: 18%;
+    }
+    .ccw{
+        max-width: 60ch;
+    }
+}
+@media screen and (max-width:1001px){
+    .container1{
+        margin-left: 15%;
+    }
+    .cta{
+        margin-left: 37%;
+    }
+    .ccw{
+        margin-left: 10%;
+    }
+    .learnmore{
+        flex-wrap: wrap;
+    }
+    .learn-something-more ul{
+        display:flex;
+        list-style: none;
+        padding-bottom: 20px;
+    }
+    .learn-something-more ul li a{
+        margin: 2px;
+    }
+}
+@media screen and (max-width: 845px){
+    .learn-something-more ul{
+        flex-wrap: wrap;
+    }
+    .ccw{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:760px){
+    .ccw{
+        margin-left: 0%;
+    }
+    .alignment-hierarchy{
+        flex-wrap: wrap;
+    }
+    .alignment-img, .hierarchy-img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:650px){
+    body{
+        font-size: 0.813em;
+    }
+    .scroll{
+        display: none;
+    }
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header{
+        margin-left: 0;
+    }
+    .container1 h3{
+        padding-left: 0;
+        text-align: center;
+    }
+    .img2, .img3{
+        width: 400px;
+    
+    }
+}
+    
+@media screen and (max-width:360px){
+    .img2, .img3{
+        width:300px;
+    }
+    .images{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article1, .article2, .article3{
+        padding: 10px;
+    }
+    .animations img{
+        width: 150px;
+    }
+    .cta{
+        margin-left: 25%;
+    }
+    .left-arrow, .right-arrow{
+        width: 30px;
+        margin-bottom: 50px;
+    }
+    
+}

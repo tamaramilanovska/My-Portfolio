@@ -1,0 +1,266 @@
+/* Google Fonts - Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Container White Paint Image, Name and Green Plant Image */
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.description-p{
+    color: #5c5b5b;
+}
+.white-paint{
+    max-height: 800px;
+}
+.introduction{
+    width: 900px;
+    padding: 0px 50px 50px 50px;
+    position: absolute;
+    background-color: white;
+    top: 30%;
+    left: 20%;
+}
+
+/* Navigation About, Projects */
+hr{
+    border-width: 3px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 60px;
+    position: relative;
+}
+nav{
+    position: relative;
+    bottom: 200px;
+}
+.white-box, .paint-box, .white-box-02, .paint-box-02{
+    width: 150px;
+    height: 80px;
+    background-color: white;
+}
+.paint-box, .paint-box-02{
+    background-image: url(img/mathilde-langevin-TFV9EPdYOaw-unsplash.svg);
+    border: none;
+}
+.paint-box{
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+h2{
+    font-weight: 600px;
+    font-size: 75px;
+    margin-bottom: 0;
+    color: #2f2f2f;
+}
+.paint-box h3, .paint-box-02 h3{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1em;
+    color: #4d4c4c;
+}
+.white-box-02{
+    background-color: lightgrey;
+}
+.paint-box-02{
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+
+}
+.paint-box:hover, .paint-box-02:hover{
+    transform: translateY(-4px);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+a{
+    text-decoration: none;
+    color: #4d4c4c;
+}
+
+/* Media Queries - Responsive */
+@media screen and (min-width: 1600px){
+    .white-paint{
+        max-height: 1000px;
+    }
+    .introduction{
+        left: 25%;
+    }
+    nav{
+        bottom: 250px;
+    }
+} 
+@media screen and (max-width: 1000px) {
+    .white-paint{
+        max-height: 800px;
+    }
+    .introduction{
+        left: 10%;
+    }
+    .green-plant{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .introduction{
+        width: 700px;
+    }
+    nav{
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1014px) {
+    .white-paint{
+        height: 780px;
+    }
+    .introduction{
+        width: 500px;
+        padding: 0px 0px 30px 50px;
+    }
+    nav{
+        bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .white-paint{
+        height: 800px;
+    }
+    .introduction{
+        width: 600px;
+        padding: 0px 0px 30px 50px;
+    }
+    .green-plant{
+    display: none;    
+    }
+    nav{
+        bottom:0px;
+        top: 70px;
+    }
+    .white-box{
+        background-color: lightgrey;
+    }
+}
+@media screen and (max-width: 695px) {
+   .white-paint{
+       height: 680px;
+   }
+    .introduction{
+        width: 500px;
+        padding: 0px 0px 50px 50px;
+        left: 10%;
+    }
+    nav{
+        bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 621px) {
+    .white-paint{
+        height: 600px;
+    }
+    nav{
+        top: 50px;
+        bottom: 0px;
+    }
+    .white-box{
+        background-color: lightgrey;
+    }
+ }
+ @media screen and (max-width: 585px) {
+    .white-paint{
+        height: 500px;
+    }
+    .introduction{
+        width: 500px;
+        padding: 0px 0px 50px 50px;
+        left: 0%;
+    }
+    nav{
+        top: 100px;
+        bottom: 0px;
+    }
+ }
+ @media screen and (max-width: 518px) {
+    .white-paint{
+        height: 400px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        width: 200px;
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .introduction{
+        width: 400px;
+        padding: 0px 0px 50px 50px;
+        left: 0%;
+    }
+    nav{
+        top: 150px;
+        bottom: 0px;
+    }
+    .nav-container{
+        flex-wrap: wrap;
+    }
+    .white-box, .paint-box, .white-box-02, .paint-box-02{
+        width: 100px;
+        height: 50px;
+    }
+    .paint-box-02, .paint-box{
+        bottom: 60px;
+        left: 5px;    
+    }
+    .paint-box h3, .paint-box-02 h3{
+        padding-top: 17px;
+        font-size: 0.9em;
+    }
+    .nav-container{
+        bottom: 40px;
+    }
+ }
+@media screen and (max-width: 400px) {
+    .introduction{
+        width: 300px;
+        padding: 0px 0px 50px 50px;
+        left: 0%;
+    }
+    .paint-box-02, .paint-box{
+        bottom: 55px;
+        left: 5px;    
+    }
+    h3 a{
+        font-size: 14px;
+        color: #5c5b5b;
+    }
+}
+@media screen and (max-width: 354px) {
+    .white-paint{
+        height: 350px;
+    }
+    nav{
+        top: 170px;
+        bottom: 0px;
+    }
+}
+ 
+
+
+

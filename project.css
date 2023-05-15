@@ -1,0 +1,368 @@
+/* Style for all seperate project pages */
+
+/* Google Fonts - Raleway (100, 400, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    color: #3a3a3a;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation */
+nav{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 7%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #6c6c6c;
+    margin-right: 50px;
+    font-size: 20px;
+}
+nav ul li a {
+    display: inline-block;
+    padding-bottom:5px;
+    background-image: linear-gradient( #6c6c6c,  #6c6c6c);
+    background-position: right -100% bottom 0;
+    background-size: 200% 1px;
+    background-repeat: no-repeat;
+}
+  
+nav ul li a:hover {
+    background-position: left -100% bottom 0;
+    transition: background-position 0.7s;
+}
+
+/* Headings */
+h1{ 
+    font-size: 40px;
+    color: #3c3c3c;
+}
+h2{
+    color: #636060;
+    font-size: 30px;
+}
+h3{
+    color: #555555;
+
+}
+.heading{
+    text-align: center;
+    margin-top: -12%;
+    margin-bottom: 5%; 
+}
+
+.images, .project-description{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 100px;
+}
+p{
+    line-height: 1.5em;
+    color: #666565;
+    width: 800px;
+    text-align: justify;
+}
+.phases li{
+    list-style:circle;
+}
+ul li{
+    color: #666565;
+    margin-bottom: 5px;
+    list-style: none;
+}
+ul{
+    padding-left: 20px;
+}
+
+/* Buttons */
+.see-live-project{
+    margin-bottom: 20px;
+    margin-right: 15px;
+    padding: 10px 15px;
+    filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.2));
+    border: none;
+    background-color: rgb(77, 76, 76);
+}
+.see-live-project a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.see-next-project, .go-back, .projects-btn {
+    margin-right: 15px;
+    padding: 10px 15px;
+    filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.2));
+    border: none;
+    background-color: white;
+}
+.see-next-project a, .go-back a, .projects-btn a {
+    color: #494949;
+    text-decoration: none;
+}
+button a{
+    font-family: 'Raleway', sans-serif;
+}
+button:hover{
+    transform: translateY(-4px);
+    filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.3));
+}
+button:active{
+    border: 1px solid gray;
+}
+
+/* Footer */
+footer{
+    margin: 50px 0 50px 0;
+    margin-left: 25%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1600px){
+    .images, .project-description{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .images, .project-description{
+        margin: 0;
+        padding: 50px;
+        width: 40%;
+    }
+    .project-description{
+        padding-left: 50px;
+    }
+    .project-image{
+        width: 600px;
+        margin-left: 50px;
+    }
+    .green-plant{
+        width: 250px;
+    }
+    p{
+        width: 700px;
+    }
+    .our-team li, .phases li{
+        line-height: 1.5em;
+    } 
+    footer{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 750px) {
+    h1{
+        font-size: 30px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        width: 600px;
+        margin-left: 50px;
+    }
+    .project-image{
+        width: 450px;
+        margin-left: 100px;
+    }
+
+}
+@media screen and (max-width: 695px) {
+    .green-plant{
+        width: 200px;
+    }
+    .heading{
+        margin-top: 0px;
+    }
+    p{
+        width: 500px;
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .green-plant{
+        display: none;
+    }
+    p{
+        margin-left: 30px;
+    }
+    .project-image{
+        margin-left: 50px;
+    }
+    nav{
+        margin-left: 110px;
+    }
+    .heading{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 560px) {
+    p{
+        margin-left: 50px;
+        width: 400px;
+    }
+    .project-image{
+        margin-left: 50px;
+        width: 400px;
+    }
+    nav{
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width: 494px) {
+    p{
+        margin-left: 50px;
+        width: 350px;
+    }
+    .project-image{
+        margin-left: 50px;
+        width: 350px;
+    }
+    nav{
+        margin-left: 50px;
+    }
+    
+}
+@media screen and (max-width: 436px) {
+    p{
+        margin-left: 50px;
+        width: 300px;
+    }
+    .project-image{
+        margin-left: 50px;
+        width: 300px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 393px) {
+    p{
+        margin-left: 50px;
+        width: 250px;
+        font-size: 14px;
+    }
+    .project-image{
+        margin-left: 50px;
+        width: 250px;
+    }
+    .images, .project-description{
+        margin: 0;
+        padding: 10px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .see-next-project, .go-back, .projects-btn {
+        padding: 5px 10px;
+    }    
+    .phases li, .our-team{
+        width: 250px;
+        font-size: 14px;
+        line-height: 1.5em;
+        margin-left: 30px;
+    }
+    h3{
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    .see-live-project{
+        margin-left: 30px;
+        width: 130px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 360px) {
+    p{
+        margin-left: 30px;
+        width: 250px;
+        font-size: 14px;
+    }
+    .project-image{
+        margin-left: 30px;
+        width: 250px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .see-next-project, .go-back, .projects-btn {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    p{
+        margin-left: 30px;
+        width: 220px;
+        font-size: 14px;
+    }
+    .project-image{
+        margin-left: 30px;
+        width: 220px;
+    }
+    nav{
+        margin-left: 0px;
+    }
+    nav ul{
+        padding-left: 10px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .see-next-project, .go-back, .projects-btn {
+        padding: 5px 10px;
+    }
+}

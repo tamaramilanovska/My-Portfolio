@@ -1,0 +1,182 @@
+/* Google Fonts - Raleway (100, 400, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+/* Headings */
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    color: #858585;
+    font-size: 20px;
+}
+.heading-container{
+    position: relative;
+    bottom: 180px;
+}
+h3{
+    color: #494949;
+}
+
+/* Navigation */
+nav{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 33%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 20px;
+    margin-right: 50px;
+}
+nav ul li a {
+    display: inline-block;
+    padding-bottom:5px;
+    background-image: linear-gradient( #6c6c6c,  #6c6c6c);
+    background-position: right -100% bottom 0;
+    background-size: 200% 1px;
+    background-repeat: no-repeat;
+}
+  
+nav ul li a:hover {
+    background-position: left -100% bottom 0;
+    transition: background-position 0.7s;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main */
+.project-image01, .project-image02, .project-image03, .project-image04, .project-image05, .project-image06, .project-image07, .project-image08, .project-image09, .project-image10 {
+    width: 480px;
+    height: 250px;  
+}
+
+.project01, .project02, .project03, .project04, .project05, .project06, .project07, .project08, .project09, .project10{
+    margin-bottom: 100px;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -50px;
+
+}
+/* View-more btn */
+.view-more{
+    padding: 15px 30px;
+    filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.2));
+    border: none;
+    background-color: white;
+}
+.view-more a{
+    color: #494949;
+    text-decoration: none;
+    font-size: 14px;
+}
+button a{
+    font-family: 'Raleway', sans-serif;
+}
+button:hover{
+    transform: translateY(-4px);
+    filter: drop-shadow(5px 4px 6px rgba(0, 0, 0, 0.3));
+}
+button:active{
+    border: 1px solid gray;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px){
+    nav{
+        margin-left: 0;
+    }
+    .heading-container{
+        margin-left: 0;
+        bottom: 0;
+    }
+    header{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 1093px){
+    .green-plant{
+        width: 250px;
+    }
+    nav ul{
+        margin-left: 20px;
+    }
+    main{
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 990px){
+    .green-plant{
+        width: 200px;
+        height: 200px;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+    nav ul li a{
+        margin-top: 10px;
+    }
+    h1{
+        margin-top: 140px;
+    }
+}
+@media screen and (max-width: 703px){
+    .green-plant{
+        display: none;
+    }
+    nav ul{
+        flex-wrap: nowrap;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 510px){
+    .project-image01, .project-image02, .project-image03, .project-image04, .project-image05, .project-image06, .project-image07, .project-image08, .project-image09, .project-image10 {
+        width: 250px;
+        height: 150px;  
+    }
+    .view-more{
+        padding: 5px 10px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #6c6c6c;
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    nav{
+        margin-left: 30px;
+    }
+    .heading-container{
+        position: relative;
+        bottom: 40px;
+    }
+
+}
